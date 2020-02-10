@@ -14,6 +14,15 @@ export default function Meta(props) {
         <link
           rel="stylesheet"
           href="https://use.typekit.net/ztq1gxf.css"></link>
+        {/* For Material UI */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
       </Head>
       {/* Custom Global Styles */}
       <style jsx global>
