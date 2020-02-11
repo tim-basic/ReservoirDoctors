@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
+
 //Utils
 import axios from "../node_modules/axios";
 
@@ -10,14 +14,33 @@ export default class extends Component {
     };
   }
   render() {
-    const { page } = this.props;
-    return (
-      <section>
-        <div className="container">
-          <h1>{page[0].acf.title}</h1>
-          <h2>Subtitle</h2>
-        </div>
-      </section>
-    );
+    const props = this.props.page[0].acf;
+
+    return <Hero title={props.title} subtitle={props.subtitle} />;
   }
+}
+
+function Hero(props) {
+  const headingStyles = {
+    height: "100vh",
+    display: "flex",
+    alignItems: "center",
+    maxWidth: "960px",
+    fontWeight: "700"
+  };
+
+  return (
+    <React.Fragment>
+      <CssBaseline />
+      <Container maxWidth="lg">
+        <Typography
+          style={headingStyles}
+          variant="h1"
+          component="h2"
+          gutterBottom>
+          {props.subtitle}
+        </Typography>
+      </Container>
+    </React.Fragment>
+  );
 }
