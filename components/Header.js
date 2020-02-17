@@ -26,8 +26,8 @@ export default class Header extends Component {
           </div>
           <nav role="navigation" aria-label="navigation">
             <ul>
-              {menu.map(item => (
-                <MenuItem text={item.text} link={item.link} />
+              {menu.map((item, i) => (
+                <MenuItem text={item.text} link={item.link} key={i} />
               ))}
             </ul>
           </nav>
@@ -70,7 +70,7 @@ function MenuItem(props) {
           li {
             display: inline-flex;
             margin-bottom: 0;
-            margin-left: 15px;
+            margin-left: 35px;
           }
           a {
             text-transform: capitalize;

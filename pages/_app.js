@@ -18,12 +18,13 @@ class MyApp extends App {
     const { Component, pages } = this.props;
 
     const { acf } = this.props["header"][0];
+    const { title } = acf;
     const { logo } = acf;
     const { menu } = acf;
     const { footer } = acf;
 
     return (
-      <Layout logo={logo} menu={menu} footer={footer}>
+      <Layout logo={logo} menu={menu} footer={footer} title={title}>
         <Component {...pages} />
       </Layout>
     );
