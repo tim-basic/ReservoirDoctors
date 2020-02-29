@@ -1,5 +1,5 @@
 {
-  "name": "Reservoir Doctors",
+  "name": "ReservoirDoctors",
   "description": "A website by Stuck in the Web",
   "scripts": {
     "dev": "next",
@@ -13,6 +13,7 @@
     "next": "^9.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-media": "^1.10.0"
+    "react-media": "^1.10.0",
+    "styled-jsx": "^3.2.4"
   }
 }

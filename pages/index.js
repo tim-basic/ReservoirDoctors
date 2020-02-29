@@ -103,6 +103,12 @@ function Staff(props) {
         <Typography id="staff" style={headingStyles} variant="h2" gutterBottom>
           Staff
         </Typography>
+        <style jsx>{`
+          * {
+            border: 1px red solid;
+          }
+        `}</style>
+
         <Media query="(max-width: 599px)" render={() => <p>I am small!</p>} />
         <div style={staffWrapper}>
           <div style={staffBlurb}>
