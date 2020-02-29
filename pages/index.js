@@ -3,14 +3,11 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Media from "react-media";
-<<<<<<< Updated upstream
-=======
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Box from "@material-ui/core/Box";
->>>>>>> Stashed changes
 //Utils
 import axios from "../node_modules/axios";
 import { width } from "dom-helpers";
@@ -29,10 +26,7 @@ export default class extends Component {
       <React.Fragment>
         <Hero title={props.title} subtitle={props.subtitle} />
         <Staff staff={props.staff} />
-<<<<<<< Updated upstream
-=======
         <VerticalTabs />
->>>>>>> Stashed changes
       </React.Fragment>
     );
   }
@@ -57,12 +51,8 @@ function Hero(props) {
           style={headingStyles}
           variant="h1"
           component="h2"
-<<<<<<< Updated upstream
-          gutterBottom>
-=======
           gutterBottom
         >
->>>>>>> Stashed changes
           {props.subtitle}
         </Typography>
       </Container>
@@ -161,8 +151,6 @@ function StaffTitle(props) {
     </React.Fragment>
   );
 }
-<<<<<<< Updated upstream
-=======
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -259,4 +247,3 @@ function VerticalTabs() {
     </Container>
   );
 }
->>>>>>> Stashed changes
